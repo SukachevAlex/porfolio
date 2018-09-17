@@ -1,0 +1,52 @@
+@import 'fonts'
+@import 'helpers/animations'
+@import 'helpers/components'
+@import 'helpers/layout'
+@import 'helpers/libs'
+@import 'helpers/mixins'
+@import 'helpers/vars'
+
+
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+a
+  outline: none
+  text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+  padding: 0
+  margin: 0
+
+ul,li
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+p, pre
+  margin: 0
+
+input,
+select,
+button
+  outline: none
+
+body
+  font-size: 14px
+  color: $fontColor
+  min-width: 320px
+  position: relative
+  font-family: $defaultFont
+  font-weight: bold
+  overflow-x: hidden
+  margin: 0
+  padding: 0
+
+
+@import "pages/index"
+@import "helpers/media"

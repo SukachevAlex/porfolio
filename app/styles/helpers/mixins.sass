@@ -1,0 +1,17 @@
+@mixin background2x($path, $ext: "png", $w: auto, $h: auto, $pos: left top, $repeat: no-repeat)
+    $path1x: "#{$path}@1x.#{$ext}"
+    $path2x: "#{$path}@2x.#{$ext}"
+ 
+    background-image: url("#{$path1x}")
+    background-size: $w $h
+    background-position: $pos
+    background-repeat: $repeat
+  
+    @media all and (-webkit-min-device-pixel-ratio : 1.5),
+    all and (-o-min-device-pixel-ratio: 3/2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) 
+        background-image: url("#{$path2x}")
+
+
+    
