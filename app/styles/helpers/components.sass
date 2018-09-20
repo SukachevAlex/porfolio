@@ -1,0 +1,65 @@
+.page-navigation_right, .page-navigation_left
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    animation: fadeIn 4s ease
+
+.page-navigation_right
+    right: 3%
+
+.page-navigation_left
+    left: 3%
+
+.page-navigation__hint
+    display: none
+
+.page-navigation__arrow
+    width: 40px
+    height: 40px
+    cursor: pointer
+    background-image: url("../img/svg/icon_right-arrow.svg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+    opacity: 0.3
+    transition: all 1s ease
+    &:hover
+        opacity: 0.5
+        transform: scaleY(1.1)
+
+.page-navigation__arrow_left
+    transform: rotate(180deg)
+    &:hover
+        transform: rotate(180deg) scaleY(1.1)
+
+.social__item
+    display: block
+    width: 50px
+    height: 50px
+    background-color: #fff  
+    background-repeat: no-repeat
+    background-size: 50% 
+    background-position: center
+    transition: all 0.3s ease
+    &:hover
+        transform: scaleX(1.15)
+
+.social__item_linkedin
+    background-color: #2270B2
+    background-image: url("../img/svg/icon_linkedin.svg")
+    &:hover
+        background-color: #206aa9
+
+.social__item_github
+    background-color: #2d3136
+    background-image: url("../img/svg/icon_github.svg")
+    &:hover
+        background-color: #2a2e33
+        
+
+.social__item_telegram
+    background-color: #428BCA
+    background-image: url("../img/svg/icon_telegram.svg")
+    &:hover
+        background-color: #3784c6
+        

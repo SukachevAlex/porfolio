@@ -13,5 +13,10 @@
     all and (min-device-pixel-ratio: 1.5) 
         background-image: url("#{$path2x}")
 
-
+@mixin colorMenuItems($count, $baseColor)
+    @for $i from 1 through $count
+        .nav__item:nth-child(#{$i})
+            background-color: nth($menuColors, $i)
+            animation-delay: ($i)/3+s
+            animation-fill-mode: forwards
     
