@@ -1,0 +1,13 @@
+html
+    include ../index/blocks/head.pug
+
+    body
+        include ../../mixins.pug
+        include ../../vars.pug
+         
+        include ../index/blocks/navigation
+        .page
+            include blocks/main
+            include ../index/blocks/header
+
+        script(src="js/main.js" type="module")
