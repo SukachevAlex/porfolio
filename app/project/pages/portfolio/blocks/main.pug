@@ -4,6 +4,10 @@ main.page-main
             h1.page__title
                 |My resent projects
             .page__content
+                .project__inner
+                    each item in projectItems
+                        +projectItem(item)
+
                 
         +pageNav({
             left: ['main', 'index.html'],

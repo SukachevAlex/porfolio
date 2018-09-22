@@ -9,3 +9,15 @@ mixin pageNav(data)
             .page-navigation__hint.page-navigation__hint_right= data.right[0]
             a.page-navigation__link(href= data.right[1])
                 .page-navigation__arrow.page-navigation__arrow_right
+
+mixin projectItem(item)
+    .project-item
+        a.project__link(href= item.link)
+        .project-item__bar
+            .project-item__dot
+            .project-item__name= item.name
+        .project-item__photo(style=`background-image: url(img/portfolio/${item.path})`)
+        .project-item__photo_hover(style=`background-image: url(img/portfolio/${item.path_hover})`)
+        .tab__area
+            each tab in item.tab
+                .tab= tab

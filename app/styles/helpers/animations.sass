@@ -39,6 +39,18 @@
   100% 
     opacity: 0.3
 
+@keyframes fadeInBlock
+  0%
+    display: none
+    opacity: 0
+  50%
+    opacity: 0
+  100%
+    display: block
+    opacity: 1
+
+
+
 @keyframes fadeInLeft
   0% 
     opacity: 0
@@ -56,4 +68,10 @@
     transform: translate3d(0, -100%, 0)
   to 
     opacity: 1
+    transform: translate3d(0, 0, 0)
+
+@keyframes fadeInDownVisible 
+  from 
+    transform: translate3d(0, -100%, 0)
+  to 
     transform: translate3d(0, 0, 0)
