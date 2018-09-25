@@ -1,8 +1,19 @@
+import { openMenu } from './menu.js';
+import { slidePage, redirect } from './pageNavigation.js';
+
+const page = document.querySelector('.page');
+
 document.addEventListener("DOMContentLoaded", function(event) {
-    document.querySelector('.burger').addEventListener('click', function() {
-        this.classList.toggle('burger_close');
-        this.classList.toggle('burger_open');
-        document.querySelector('.page-main').classList.toggle('page-main_hidden');
-        document.querySelector('.header__nav').classList.toggle('header__nav_visible');
-    });
+    document.querySelector('.burger').addEventListener('click', openMenu);
+
+    document.querySelectorAll('.page-navigation__link').forEach(el =>
+        el.addEventListener('click', slidePage));
+
+    if (localStorage.getItem('page') && localStorage.getItem('page') !== 'index') {
+        page.classList.add(`page_slideIn-${localStorage.getItem('side')}`);
+        localStorage.removeItem('side');
+        localStorage.removeItem('page');
+    }
+
+    page.classList.add('page_visible');
 });

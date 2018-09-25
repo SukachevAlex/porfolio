@@ -1,5 +1,27 @@
 @import "project-item"
 
+.page
+    opacity: 0
+
+.page_visible
+    opacity: 1
+    
+.page_slideIn-left
+    animation: slideInLeft 0.5s ease
+    animation-fill-mode: forwards 
+
+.page_slideIn-right
+    animation: slideInRight 0.5s ease 
+    animation-fill-mode: forwards 
+
+.page_slideOut-left
+    animation: slideOutLeft 0.5s ease
+    animation-fill-mode: forwards 
+
+.page_slideOut-right
+    animation: slideOutRight 0.5s ease 
+    animation-fill-mode: forwards
+
 .page__inner
     padding-top: 150px
     
