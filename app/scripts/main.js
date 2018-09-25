@@ -1,5 +1,5 @@
 import { openMenu } from './menu.js';
-import { slidePage, redirect } from './pageNavigation.js';
+import { slidePage } from './pageNavigation.js';
 
 const page = document.querySelector('.page');
 

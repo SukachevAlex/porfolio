@@ -6,7 +6,7 @@ export function slidePage(event) {
 
     event.preventDefault();
     document.querySelector('.page').classList.add(`page_slideOut-${side ? 'right' : 'left' }`);
-    setTimeout(redirect, 450);
+    setTimeout(redirect, 350);
 }
 
 export function redirect() {
