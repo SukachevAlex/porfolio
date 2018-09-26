@@ -1,0 +1,55 @@
+.social__wrapper
+    display: flex
+    justify-content: center
+    margin-top: 30px
+    animation: fadeInLight 3s ease
+    .social__item
+        margin-right: 15px
+        &:last-of-type
+            margin-right: 0
+
+.email-address
+    color: lighten(#3d3d3d, 25%)
+
+.contact-form
+    text-align: center
+    margin-bottom: 85px
+    
+.contact-form__input, .contact-form__textarea
+    margin: 0 auto 20px
+    display: block
+    width: 80%
+    background: none
+    border: none
+    font-size: 24px
+    color: $fontColor
+    padding-bottom: 10px
+    border-bottom: 1px solid #3d3d3d
+    font-weight: bold
+    &::placeholder
+        color: #3d3d3d
+
+.contact-form__textarea
+    height: 38px
+    resize: none
+    outline: none
+    overflow: hidden
+
+.contact-form__button
+    cursor: pointer
+    background: none
+    border: 1px solid #3d3d3d
+    font-size: 24px
+    color: #3d3d3d
+    padding: 5px 15px
+    border-radius: 10px
+    transition: all 0.3s ease
+    margin-top: 15px
+    &:hover
+        background-color: #3d3d3d
+        color: $backgroundColor
+
+.sub-title_marginTop
+    width: 80%
+    margin: 30px auto
+    text-align: center

@@ -3,6 +3,20 @@ main.page-main
         .page__inner
             h1.page__title
                 |Contact me
-            .page__content
+            h2.sub-title.sub-title_marginTop
+                |If you want to write me, just use form below or send me email to 
+                a.email-address(href="mailto:sukachevalexandr@gmail.com")
+                    |sukachevalexandr@gmail.com
+            .page__content                
+                form.contact-form(method="POST" action="https://formspree.io/maloutm@n-shift.ru")
+                    input.contact-form__input(type="text" name="name" placeholder="Your name" autofocus)
+                    input.contact-form__input(type="email" name="email" placeholder="Your email")
+                    textarea.contact-form__textarea(name="message" placeholder="Your message")
+                    button.contact-form__button(type="submit")
+                        |Send
 
+                h2.sub-title.sub-title_marginTop
+                    |Or visit my social networks
+                .social__wrapper
+                    include ../../index/blocks/social
         +pageNav({left: ['blog', 'blog.html']})
