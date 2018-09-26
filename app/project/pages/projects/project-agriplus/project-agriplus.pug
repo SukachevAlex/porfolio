@@ -1,0 +1,13 @@
+html
+    include ../../index/blocks/head.pug
+
+    body
+        include ../../../mixins.pug
+        include ../../../vars.pug
+         
+        include ../../index/blocks/navigation
+        .page.page_project-agriplus
+            include ../../index/blocks/header
+            include blocks/main
+
+        script(src="js/main.js" type="module")
