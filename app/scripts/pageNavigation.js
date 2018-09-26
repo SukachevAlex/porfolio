@@ -10,5 +10,6 @@ export function slidePage(event) {
 }
 
 export function redirect() {
+    document.querySelector('.page').classList.remove('page_visible');
     window.location = `${localStorage.getItem('page')}.html`;
 }

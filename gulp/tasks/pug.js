@@ -5,6 +5,7 @@ module.exports = function() {
                 'app/project/pages/portfolio/*.pug',
                 'app/project/pages/blog/*.pug',
                 'app/project/pages/contact/*.pug',
+                'app/project/pages/skills/*.pug',
             ])
             .pipe($.gp.pug({
                 pretty: true
