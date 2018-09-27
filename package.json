@@ -23,6 +23,7 @@
         "gulp-sass": "^4.0.1",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-tinypng": "^1.0.2",
-        "gulp-uglifyjs": "^0.6.2"
+        "gulp-uglifyjs": "^0.6.2",
+        "siema": "^1.5.1"
     }
 }

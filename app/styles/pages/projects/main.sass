@@ -1,0 +1,75 @@
+.link_previous
+    display: block
+    width: 40px
+    height: 40px
+    background-image: url(../img/svg/icon_previous.svg)
+    background-size: 100%
+    
+.link__inner
+    position: absolute
+    top: 50px
+    left: 50px
+    animation: fadeIn 3s ease
+    transition: all 0.5s ease
+    opacity: 0.3
+    &:hover
+        opacity: 0.5
+        transform: rotate(-7deg) scale(1.05)
+
+.button__inner
+    display: flex
+    justify-content: space-between
+
+.button_external, .button.button_github
+    padding-right: 40px
+    &:hover
+        background-color: transparent
+        color: #3d3d3d
+        transform: scale(0.97, 1.03)
+        border-bottom-width: 2px
+        padding-bottom: 2px
+    &::after
+        content: ""
+        display: block
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+
+
+.button_external
+    transition: all 0.2s ease
+    &::after
+        background-image: url(../img/svg/icon_external-link.svg)
+        background-size: 100%
+
+.button_github
+    &::after
+        background-image: url(../img/svg/icon_github-dark.svg)
+        background-size: 100%
+
+.page__button
+    margin-left: 50px
+    &:first-of-type
+        margin-left: 0
+
+.project__title
+    margin-top: 30px
+    margin-bottom: 15px
+    padding-bottom: 8px
+    width: 35%
+    border-bottom: 1px solid #3d3d3d
+
+.project__text
+    color: #3d3d3d
+
+.project__list
+    margin-left: 15px
+
+.project__list-item
+    list-style: circle
+    color: #3d3d3d
+    
+@import "slider"
