@@ -1,7 +1,7 @@
 export function slidePage(event) {
     let side = Boolean(this.querySelector('.page-navigation__arrow_left'));
 
-    localStorage.setItem('page', /(\w+).html/.exec(this)[1]);
+    localStorage.setItem('page', this.getAttribute('href'));
     localStorage.setItem('side', `${side ? 'left' : 'right'}`);
 
     event.preventDefault();
@@ -11,5 +11,5 @@ export function slidePage(event) {
 
 export function redirect() {
     document.querySelector('.page').classList.remove('page_visible');
-    window.location = `${localStorage.getItem('page')}.html`;
+    window.location = localStorage.getItem('page');
 }

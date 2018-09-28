@@ -9,9 +9,9 @@ main.page-main
                 |to do
             .page__content
                 .button__inner
-                    a.button.button_external.page__button(href="https://sukachevalex.github.io/dom.yandex/")
+                    a.button.button_external.page__button(href="https://sukachevalex.github.io/dom.yandex/index.html")
                         |Visit the website
-                    a.button.button_github.page__button(href="https://sukachevalex.github.io/dom.yandex/index.html")
+                    a.button.button_github.page__button(href="https://sukachevalex.github.io/dom.yandex/404/index.html")
                         |Project on github
                 
                 .slider
@@ -28,4 +28,8 @@ main.page-main
                 ul.project__list
                     li.project__list-item 
                         |to do
+
+        +pageNav({
+            left: ['hemma', 'project-hemma.html'],
+            right: ['posh', 'project-posh.html']})
                 
