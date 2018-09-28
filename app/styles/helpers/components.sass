@@ -30,6 +30,26 @@
 
 .page-navigation__hint
     display: none
+    font-size: 18px
+
+.page-navigation
+    &:hover
+        .page-navigation__hint
+            display: block
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            color: #3d3d3d
+            
+.page-navigation__hint_left
+    left: 100%
+    animation: fadeInLeft 0.25s ease
+
+.page-navigation__hint_right
+    right: 100%
+    animation: fadeInRight 0.25s ease
+
+
 
 .page-navigation__arrow
     width: 40px

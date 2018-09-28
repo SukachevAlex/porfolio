@@ -1,11 +1,11 @@
 mixin pageNav(data)
     if data.left
-        .page-navigation_left
+        .page-navigation.page-navigation_left
             .page-navigation__hint.page-navigation__hint_left= data.left[0]
             a.page-navigation__link(href= data.left[1])
                 .page-navigation__arrow.page-navigation__arrow_left
     if data.right
-        .page-navigation_right
+        .page-navigation.page-navigation_right
             .page-navigation__hint.page-navigation__hint_right= data.right[0]
             a.page-navigation__link(href= data.right[1])
                 .page-navigation__arrow.page-navigation__arrow_right

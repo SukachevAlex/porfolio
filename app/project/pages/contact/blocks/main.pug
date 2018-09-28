@@ -9,9 +9,12 @@ main.page-main
                     |sukachevalexandr@gmail.com
             .page__content                
                 form.contact-form(method="POST" action="https://formspree.io/maloutm@n-shift.ru")
-                    input.contact-form__input(type="text" name="name" placeholder="Your name" autofocus)
-                    input.contact-form__input(type="email" name="email" placeholder="Your email")
-                    textarea.contact-form__textarea(name="message" placeholder="Your message")
+                    .contact-form__label.contact-form__label_name
+                        input.contact-form__input.contact-form__input_name(type="text" name="name" placeholder="Your name" autofocus)
+                    .contact-form__label.contact-form__label_email
+                        input.contact-form__input.contact-form__input_email(type="email" name="email" placeholder="Your email")
+                    .contact-form__label.contact-form__label_text
+                        textarea.contact-form__textarea.contact-form__textarea_text(name="message" placeholder="Your message")
                     button.button.contact-form__button(type="submit")
                         |Send
 
