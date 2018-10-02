@@ -1,12 +1,13 @@
 main.page-main
     .container
-        .page__inner
-            h1.page__title
-                |Contact me
-            h2.sub-title.sub-title_marginTop
-                |If you want to write me, just use form below or send me email to 
-                a.email-address(href="mailto:sukachevalexandr@gmail.com")
-                    |sukachevalexandr@gmail.com
+        .page__inner.page__inner_half
+            .page__top-line
+                h1.page__title
+                    |Contact me
+                h2.sub-title.sub-title_marginTop
+                    |If you want to write me, just use form below or send me email to 
+                    a.email-address(href="mailto:sukachevalexandr@gmail.com")
+                        |sukachevalexandr@gmail.com
             .page__content                
                 form.contact-form(method="POST" action="https://formspree.io/maloutm@n-shift.ru")
                     .contact-form__label.contact-form__label_name
