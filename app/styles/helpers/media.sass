@@ -24,15 +24,82 @@
     width: 90%
     height: 40%
     margin: 0 auto 40px
+  .slider__item
+    height: 45%
+    min-height: 250px
+  .promo
+    max-width: 85%
 
 @media only screen and (max-width : 992px)
   /**/
 
 @media only screen and (max-width : 768px)
-  /**/
+  .sub-title_marginTop
+    width: 100%
+  .main__title, .page__title
+    font-size: calc(3.125vw + 13px)
+    margin-bottom: 15px
+  .main__sub-title, .sub-title, .button
+    font-size: calc(1.785vw + 15px)
+  .button__inner
+    flex-direction: column
+  .button
+    margin-left: 0
+    &:first-of-type
+      margin-bottom: 15px
+
+
+@media only screen and (max-width : 620px)
+  .project-item 
+    min-width: 280px
+
+
+@media only screen and (max-width : 550px)
+  .social__inner
+    top: auto
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    animation: fadeInDownCenter 4s ease
+  .social__item
+    display: inline-block
+  .header__nav
+    flex-direction: column
+  .nav__item
+    animation: fadeInLeft 1s 2s ease
+  .page__inner 
+    padding-top: 120px
+  .sub-title, .page__top-line
+    overflow: hidden
+    text-overflow: ellipsis
+  .email-address
+    font-size: 21px
+  .project__inner
+    width: 100%
 
 @media only screen and (max-width : 480px)
- /**/
+  .page-navigation_left
+    left: 0
+  .page-navigation_right
+    right: 0
+  .contact-form__input, .contact-form__textarea    
+    &::placeholder
+        font-size: 1.25rem
+  .page__content 
+    margin-top: 40px
+  .link__inner
+    top: 5%
+    left: 5%
+  .page-header
+    top: 5%
+    right: 5%
+  .slider__arrow 
+    width: 30px
+  
 
+@media only screen and (max-width : 350px)
+  .project-item 
+      min-width: 250px
+  
 @media only screen and (max-width : 320px)
   /**/
