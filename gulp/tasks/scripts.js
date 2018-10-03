@@ -5,7 +5,7 @@ module.exports = function() {
                 'node_modules/siema/dist/siema.min.js'
             ])
             .pipe($.gp.concat('libs.min.js'))
-            .pipe($.gulp.dest('dist/js/'))
+            .pipe($.gulp.dest('app/scripts/'))
             .pipe($.browserSync.reload({
                 stream: true
             }));
@@ -24,7 +24,7 @@ module.exports = function() {
     $.gulp.task('scripts', function() {
         return $.gulp.src([
                 './app/scripts/*.js',
-                '!./app/scripts/libs.min.js'
+                './app/scripts/libs.min.js'
             ])
             .pipe($.gulp.dest('dist/js/'))
             .pipe($.browserSync.reload({

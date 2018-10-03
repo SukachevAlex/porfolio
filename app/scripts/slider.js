@@ -11,9 +11,6 @@ Siema.prototype.addArrows = function() {
     this.nextArrow.addEventListener('click', () => this.next());
 }
 
-
-
-
 const siema = new Siema({
     selector: '.slider',
     duration: 200,
